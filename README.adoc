@@ -1,0 +1,24 @@
+= Arduino Keyboard
+
+This is a project of the Hackathon week in 2021
+of the Red Hat console.dot team.
+
+The idea is to use an Arduino as external Keyboard,
+a little bit like StreamDeck.
+
+It requires Arduino boards/clones that support the
+https://www.arduino.cc/reference/en/language/functions/usb/keyboard/[Keyboard libraries]
+to send keyboard code via USB as Human Input Devices (HID)
+
+An example board is the https://learn.adafruit.com/introducting-itsy-bitsy-32u4[Adafruit ItsyBitsy 32u4]
+
+== Wiring setup
+
+.Example wiring setup in Fritzing
+image::fritzing.png[]
+
+Currently pins 10 and 11 are connected to push-buttons that serve as input.
+
+Pin 9 is used to 'stop' the Keyboardinput mode. I found out (and the Adafruit docs
+talk about it), that it can be hard to do anything with the board if it is firing
+characters at you at high rate. 

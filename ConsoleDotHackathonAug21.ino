@@ -11,7 +11,6 @@
 #define BUTTON_PIN1 10
 #define BUTTON_PIN2 11
 
-int count;
 boolean shouldBlink = true;
 
 void setup() {
@@ -24,7 +23,7 @@ void setup() {
   digitalWrite(BUTTON_PIN1, HIGH); // Pull up
   pinMode(BUTTON_PIN2, INPUT);
   digitalWrite(BUTTON_PIN2, HIGH); // Pull up
-  count = 0;
+  
   Keyboard.begin();
 }
 
