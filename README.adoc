@@ -17,8 +17,12 @@ An example board is the https://learn.adafruit.com/introducting-itsy-bitsy-32u4[
 .Example wiring setup in Fritzing
 image::fritzing.png[]
 
-Currently pins 10 and 11 are connected to push-buttons that serve as input.
+Currently pins 1 and 2 are connected to push-buttons that serve as input.
+This is because on Atmel 32u4-based boards only digital pins 0,1,2,3 and 7
+can be used for interrupts. 
+See https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/[attachInterrupt()]
+documentation at the Arduino reference.
 
-Pin 9 is used to 'stop' the Keyboardinput mode. I found out (and the Adafruit docs
+Digital pin 0 is used to 'stop' the Keyboardinput mode. I found out (and the Adafruit docs
 talk about it), that it can be hard to do anything with the board if it is firing
 characters at you at high rate. 
