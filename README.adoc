@@ -6,14 +6,20 @@ of the Red Hat console.dot team.
 .Picture of my setup. Arduino with buttons in the back, Joystick in front.
 image::photo.jpeg[Setup,600,300]
 
-The idea is to use an Arduino as external Keyboard,
-a little bit like StreamDeck.
+== Abstract
+
+The original idea was to use an Arduino as external Keyboard,
+a little bit like StreamDeck. That requires additional code on the
+host computer to support 
 
 It requires Arduino boards/clones that support the
-https://www.arduino.cc/reference/en/language/functions/usb/keyboard/[Keyboard libraries]
-to send keyboard code via USB as Human Input Devices (HID)
+https://www.arduino.cc/reference/en/language/functions/usb/keyboard/[Keyboard]
+and
+https://www.arduino.cc/reference/en/language/functions/usb/mouse/[Mouse]
+libraries to send keyboard code via USB as Human Input Devices (HID)
 
 An example board is the https://learn.adafruit.com/introducting-itsy-bitsy-32u4[Adafruit ItsyBitsy 32u4]
+that I am using.
 
 == Wiring setup
 
@@ -65,3 +71,6 @@ mouse movement.
   Mouse.move(xDir,yDir,0);
 ----
 
+.INFO
+Kudos to my daughter, who soldered me some little adapter boards for the joystick 
+to be put in the breadboard.
