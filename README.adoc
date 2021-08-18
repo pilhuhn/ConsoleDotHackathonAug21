@@ -1,4 +1,4 @@
-= Arduino Keyboard
+= Arduino-based computer input
 
 This is a project of the Hackathon week in 2021
 of the Red Hat console.dot team.
